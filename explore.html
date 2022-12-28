@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Page</title>
+
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap/css/bootstrap.min.css">
+    
+    <!-- MyStyle -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="">
+        <div id="hideSearch" class="fixed w-25 sideBar bg-light border-end-1">
+            <h1 class="text-center p-4">LifeStory</h1>
+            <div class="text-dark p-4 col">
+                <h3 class="col mb-4"> 
+                    <a href="index.html" style="color: black;">
+                        <i class="fa-solid fa-house"></i>
+                        Beranda
+                    </a>
+                </h3>
+                <h3 class="col mb-4" onclick="showSearch()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Cari
+                </h3>
+                <h3 class="col mb-4">
+                    <a href="explore.html">
+                    <i class="fa-solid fa-compass"></i>
+                    Jelajahi</a>
+                </h3>
+                <h3 class="col mb-4">
+                    <a href="pesan.html" style="color: black;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="" style="width: 30px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                          </svg>
+                          
+                        Pesan
+                    </a>
+                </h3>
+                <h3 class="col mb-4">
+                    <a href="profile.html" style="color: black;">
+                        <i class="fa-solid fa-user"></i>
+                    Profile
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+        <div id="showSearch" class="fixed d-none w-25 sideBar bg-light border-end-1">
+            <h3 class="p-1" onclick="hideSearch()">X</h3>
+            <h1 class="text-center p-4">Cari</h1>
+            <div class="text-dark p-4 row">
+                <h3 class="col"> 
+                    <a href="index.html" class="d-flex">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </h3>
+                <h3 class="col" onclick="hideSearch()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                </h3>
+                <h3 class="col">
+                    <a href="explore.html">
+                        <i class="fa-solid fa-compass"></i>
+                    </a>
+                </h3>
+                <h3 class="col">
+                    <a href="pesan.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="" style="width: 30px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                          </svg>
+                    </a>
+                </h3>
+                <h3 class="col">
+                    <a href="profile.html" class="text-primary">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </h3>
+            </div>
+            <div class="p-2">
+                <input type="text" placeholder="cari" class="w-100">
+                <hr>
+                <h5>Terbaru</h5>
+            </div>
+        </div>
+        <div style="margin-left: 350px; margin-top: 10px;">
+            <div class="explore" class="" style="display: flex; flex-wrap: wrap;">
+                <div class="item m-1">
+                    <div class="card ">
+                        <img src="assets/img/profile1.jpeg" alt="">
+                    </div>
+                </div>
+                
+                <div class="item m-1">
+                    <div class="card">
+                        <video height="400" controls >
+                            <source src="assets/video/beruang.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="item m-1">
+                    <div class="card">
+                        <img src="assets/img/profile2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item m-1">
+                    <div class="card">
+                        <video height="400" controls >
+                            <source src="assets/video/beruang.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="item m-1">
+                    <div class="card">
+                        <img src="assets/img/profile5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item m-1">
+                    <div class="card">
+                        <video height="400" controls >
+                            <source src="assets/video/beruang.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="item m-1">
+                    <div class="card">
+                        <img src="assets/img/profile5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item m-1">
+                    <div class="card">
+                        <video height="400" controls >
+                            <source src="assets/video/beruang.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="item m-1">
+                    <div class="card">
+                        <img src="assets/img/profile5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item m-1">
+                    <div class="card">
+                        <video height="400" controls >
+                            <source src="assets/video/beruang.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="item m-1">
+                    <div class="card">
+                        <img src="assets/img/profile5.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/bootstrap/bootstrap/js/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+
+    <script src="style/script.js"></script>
+
+</body>
+</html>
